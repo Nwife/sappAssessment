@@ -57,7 +57,6 @@ export default function Signup() {
         else setPasswordMatch(false)
       }
     
-      console.log('©️@',process.env.REACT_APP_CREATE)
       
       const handleSubmit = async (e) => {
         e.preventDefault();
@@ -97,9 +96,6 @@ export default function Signup() {
             setIsPending(false);
           }
       }
-
-      console.log('data>>>',data)
-      console.log('error>>>', error)
 
     return (
     <div className='signup'>

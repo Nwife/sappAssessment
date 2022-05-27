@@ -45,7 +45,7 @@ export default function SignIn() {
               }),
             });
             let resJson = await res.json();
-            console.log('res>>',resJson)
+            
             if (resJson.statusCode === 200) {           //successful message
               setData(resJson.data);
               dispatch({type: 'LOGIN', payload: resJson.data}); //the details of the person logged in is available to all the components in our App.
