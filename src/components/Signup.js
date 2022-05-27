@@ -70,7 +70,7 @@ export default function Signup() {
         setIsPending(true); //sets the pending state
 
         try {
-            let res = await fetch('https://moni-typescript-test.herokuapp.com/api/user/create', {
+            let res = await fetch(process.env.REACT_APP_CREATE, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json"

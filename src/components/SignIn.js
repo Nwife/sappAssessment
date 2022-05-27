@@ -34,7 +34,7 @@ export default function SignIn() {
         setIsPending(true); //sets the pending state
 
         try {
-            let res = await fetch('https://moni-typescript-test.herokuapp.com/api/user/login', {
+            let res = await fetch(process.env.REACT_APP_LOGIN, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json"
