@@ -1,0 +1,35 @@
+.sidebar{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background:#18345E;
+    justify-content: center;
+    flex-direction: column;
+}
+.sidebar__img img{
+    width: 100%;
+}
+.sidebar__text{
+    text-align: center;
+}
+.sidebar__text h1{
+    font-size: 1.875rem;
+}
+.sidebar__text p{
+    font-size: 1.125rem;
+}
+.sidebar__controls{
+    margin-top: 1.6rem;
+}
+@media(max-width: 1000px){
+    .sidebar{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 760px){
+    .sidebar{
+        padding: 4rem;
+    }
+}
